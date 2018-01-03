@@ -6,8 +6,7 @@ before_install:
 script: cd com.googlecode.cppcheclipse.parent && mvn clean verify && cd .. && tree && ls -l ./com.googlecode.cppcheclipse.repository/target/*.zip
 deploy:
   provider: bintray
-  file_glob: true
-  file: "com.googlecode.cppcheclipse.repository/target/com.googlecode.cppcheclipse*.zip"
+  file: bintray-deploy.json
   user: "$BINTRAY_USER"
   key: "$BINTRAY_API_KEY"
   
