@@ -1,6 +1,7 @@
 language: java
 sudo: false
-script: cd com.googlecode.cppcheclipse.parent && mvn clean verify
+script: cd com.googlecode.cppcheclipse.parent && mvn clean verify && cd .. 
+script: ls -l com.googlecode.cppcheclipse.repository/target/*.zip
 deploy:
   provider: bintray
   file_glob: true
