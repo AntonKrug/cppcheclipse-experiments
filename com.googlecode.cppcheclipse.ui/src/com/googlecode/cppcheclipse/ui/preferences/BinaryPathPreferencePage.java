@@ -56,7 +56,7 @@ public class BinaryPathPreferencePage extends FieldEditorPreferencePage
 	private RadioGroupFieldEditor updateInterval;
 	private Composite updateIntervalParent;
 	private BooleanFieldEditor automaticUpdateCheck;
-	private FileFieldEditor binaryPath;
+	private StringFieldEditor binaryPath;
 	private Link updateCheckNotice;
 	private boolean hasBinaryPathChanged;
 	private Link link;
