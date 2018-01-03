@@ -25,7 +25,7 @@
 
     "files":
         [
-        {"includePattern": "com.googlecode.cppcheclipse.repository/target/com.googlecode.cppcheclipse(.*)", "uploadPattern": "$1"},
+        {"includePattern": "com.googlecode.cppcheclipse.repository/target/com.googlecode.cppcheclipse(.*)", "uploadPattern": "$1"}
         ],
     "publish": true
 }
