@@ -2,10 +2,9 @@ language: java
 sudo: false
 script: cd com.googlecode.cppcheclipse.parent && mvn clean verify
 deploy:
-  provider: releases
-  api_key: $GITHUB_API_KEY
+  provider: bintray
   file_glob: true
   file: "com.googlecode.cppcheclipse.repository/target/com.googlecode.cppcheclipse*.zip"
-  skip_cleanup: true
-  on:
-    tags: true
+  user: "$BINTRAY_USER"
+  key: "$BINTRAY_API_KEY"
+  
